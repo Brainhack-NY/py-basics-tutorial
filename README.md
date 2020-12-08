@@ -82,7 +82,7 @@ Lastly, you can find the complete guide to conda environment management on their
 Binder uses the `repo2docker` tool to build containerized versions of your environment, and hosts an interactive Jupyter session online for people to access via browsers.
  - See overview at: https://jupyter.org/binder
  - For example: https://jupyter.org/try
- - Our tutorial repo: https://github.com/Brainhack-NY/py-basics-tutorial
+ - 2007 Nobel Prize in Physics: https://blog.jupyter.org/congratulations-to-the-ligo-and-virgo-collaborations-from-project-jupyter-5923247be019
 
 
 ### For this tutorial:
