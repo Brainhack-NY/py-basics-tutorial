@@ -1,9 +1,9 @@
 # Introduction to Python, Jupyter, Conda
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Brainhack-NY/py-basics-tutorial/HEAD)
 
 This is an introduction to using Conda and Jupyter for scientific research projects. The contents are based on materials from Neurohackademy and lessons put together by Tal Tarkoni, and has been heavily modified for Brainhack NY.
 
 ## Conda
----
 The hackathon's setup instructions had you install a program called `miniconda`, and we've given you a few `conda` commands to configure and install a few Python packages. 
 
 ### What is Conda?
@@ -61,10 +61,11 @@ channels:
 dependencies:
   - python=3.6
   - dipy
-  - pip
+  - pip:
+    - fury      # needed to add this extra line
 prefix: /Users/xxie/miniconda3/envs/dwi_py
 ```
-Now we can share this environment file via GitHub! Let's pretend we are our colleague, and pretend we currently do not have the environment on our machine by deleting what we just created: 
+Note, we may want to delete the `prefix` line before sharing so the path to the environmeent becomes flexible. Now we can share this environment file via GitHub! Let's pretend we are our colleague, and pretend we currently do not have the environment on our machine by deleting what we just created:
 ```
 $ conda deactivate
 $ conda remove --name dwi_py --all
@@ -81,7 +82,7 @@ Lastly, you can find the complete guide to conda environment management on their
 Binder uses the `repo2docker` tool to build containerized versions of your environment, and hosts an interactive Jupyter session online for people to access via browsers.
  - See overview at: https://jupyter.org/binder
  - For example: https://jupyter.org/try
- - Our tutorial repo:
+ - Our tutorial repo: https://github.com/Brainhack-NY/py-basics-tutorial
 
 
 ### For this tutorial:
