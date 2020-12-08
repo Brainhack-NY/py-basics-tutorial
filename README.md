@@ -92,4 +92,8 @@ Additional setups are required in your `base` conda environment to run interacti
 (base)$ conda install -c conda-forge nodejs=11.9.0
 (base)$ jupyter labextension install @jupyter-widgets/jupyterlab-manager@2.0
 ```
-
+We also need to make sure our current conda environment is visible to Jupyter:
+```
+(base)$ python -m ipykernel install --user --name=base
+```
+Of course, you can replace "base" with the name of any other environment you create in the future. We will take a look at Jupyter next.
